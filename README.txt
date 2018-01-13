@@ -26,3 +26,27 @@ Run finetune.py with the required parameters.
 Step 4: Inference
 After creating the model, set-up the inference script "infer.py" so that it can look up the required
 model and image files. Then run it to see the predictions in terminal.
+
+________________________________________________________________________________________________________
+The complete file structure must be as follows:
+
+(working dir)
+ |
+ |__(data)
+ |    |__(train.txt)
+ |    |__(val.txt)
+ |    |__(restructure_data_alexnet.py)
+ |    |__(jpg)
+ |    |__(imagelabels.mat)
+ |
+ |__(_tmp)
+ |    |__(checkpoints)
+ |    |__(tensorboard)
+ |
+ |__(alexnet.py)
+ |
+ |__(datagenerator.py)
+ |
+ |__(finetune.py)
+ |
+ |__(infer.py)
